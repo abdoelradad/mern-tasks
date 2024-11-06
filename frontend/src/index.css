@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Roboto", serif;
+  }
+}
+
+@layer components {
+  .slider {
+    mask-image: linear-gradient(to right, transparent, #000, transparent);
+  }
+  .bg {
+    @apply bg-gradient-to-b from-white via-gray-50 to-white;
+  }
+
+  .input-box {
+    @apply mb-4 w-full rounded-lg border-[1.5px] bg-transparent px-5 py-3 text-sm outline-none;
+  }
+  .btn-primary {
+    @apply my-1 w-full rounded-lg bg-indigo-600 p-2 text-sm text-white transition-all duration-300 hover:bg-indigo-700;
+  }
+}
